@@ -12,7 +12,14 @@ No build step, no dependencies, no package manager. Edit the JS, refresh the bro
 
 ## Git Workflow
 
-The repo is pushed to GitHub at `https://github.com/asifabdullah/pixel-siege`. Always commit and push after meaningful changes so there's a clean revert point.
+The repo is at `https://github.com/asifabdullah/pixel-siege`. **After every meaningful unit of work — a new feature, a bug fix, a refactor — commit and push immediately.** Never leave work uncommitted. This ensures there is always a clean, named revert point on GitHub.
+
+Commit rules:
+- Stage only the files changed for that task (`git add <file>` not `git add .`)
+- Write a concise, descriptive commit message (imperative mood: "Add X", "Fix Y", "Refactor Z")
+- Always push after committing: `git push`
+- Include the co-author trailer on every commit:
+  `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>`
 
 ## Architecture
 
